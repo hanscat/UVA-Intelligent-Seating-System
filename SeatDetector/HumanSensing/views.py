@@ -9,9 +9,8 @@ from HumanSensing import subscribe
 def index(request):
     # return HttpResponse("Hello, world. You're at Dr. Fourier's project index.")
 
-    topics = ['uvafourier']
+	topics = ['uvafourier']
 	#topics = ['#']
-
 	topic = "yo"
 	payload = "hmmm"
 
@@ -27,7 +26,7 @@ def index(request):
 
 	for a in m:
 		topic = a.topic
-		payload = a.payload.split(",")[0];
+		payload = str(a.payload).split(",")[0];
 
 
     
