@@ -26,7 +26,7 @@ def index(request):
 
 	for a in m:
 		topic = a.topic
-		payload = str(a.payload).split(",")[0];
+		payload = str(a.payload).split(",")[0][2];
 
 
     
