@@ -6,7 +6,8 @@
 		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 		<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
         <link rel="stylesheet" href="{% static 'css/table.css' %}"/>
-		
+{#        <link rel="stylesheet" href="{% static 'css/map.css' %}"/>#}
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Capstone project of CpE 2018">
@@ -25,28 +26,17 @@
 	
 	<body>
     
-{#        <table id="example" class="display" cellspacing="0" width="100%">#}
-{#            <thead>#}
-{#                <tr>#}
-{#                    <th>Name</th>#}
-{#                    <th>Position</th>#}
-{#                    <th>Office</th>#}
-{#                    <th>Extn.</th>#}
-{#                    <th>Start date</th>#}
-{#                    <th>Salary</th>#}
-{#                </tr>#}
-{#            </thead>#}
-{#            <tfoot>#}
-{#                <tr>#}
-{#                    <th>Name</th>#}
-{#                    <th>Position</th>#}
-{#                    <th>Office</th>#}
-{#                    <th>Extn.</th>#}
-{#                    <th>Start date</th>#}
-{#                    <th>Salary</th>#}
-{#                </tr>#}
-{#            </tfoot>#}
-{#        </table>#}
+    <h1 class="title">UVA Rice Hall Seating Area Availabilities</h1>
+{#    <div class='pin'></div>#}
+{#    <div class='pulse'></div>#}
+        <div class="NI-lab" style="background-image: url({% static 'pics/map.png' %});">
+            <div class="table" id="t1" style="background-image: url({% static 'pics/table.png' %});">
+                <div class="led-green"></div>
+            </div>
+            
+            <div class="table" id="t2" style="background-image: url({% static 'pics/table.png' %});"></div>
+            
+        </div>
     
 		<div class="container">
 		  <div class="first-floor floor">
