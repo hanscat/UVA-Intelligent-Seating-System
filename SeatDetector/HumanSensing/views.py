@@ -18,6 +18,7 @@ def conn():
 def index(request):
 	MQTT_thread = threading.Thread(target=conn())
 	MQTT_thread.start()
+
 	element = {
 		'topic': topic,
 		'payload': payload
