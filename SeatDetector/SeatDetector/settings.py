@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'HumanSensing',
+    'django_celery_beat',
+    'django_celery_results',
+    'tasks',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +132,10 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
     '/static/',
 )
+# CELERY STUFF
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = TIME_ZONE
