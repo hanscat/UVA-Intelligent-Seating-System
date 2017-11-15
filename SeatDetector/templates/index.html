@@ -3,11 +3,8 @@
 	<head>
 		{% load bootstrap3 %}
 		{% load static %}   
-		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 		<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
         <link rel="stylesheet" href="{% static 'css/table.css' %}"/>
-{#        <link rel="stylesheet" href="{% static 'css/map.css' %}"/>#}
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Capstone project of CpE 2018">
@@ -19,102 +16,99 @@
 		<!-- Custom fonts for this template -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-		
-		<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
-		
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script>
+        $(document).ready(
+                function() {
+                    setInterval(function() {
+{#                        var randomnumber = Math.floor(Math.random() * 100 % 3);#}
+{#                        if(randomnumber == 1){#}
+{#                            document.getElementById("t1led").classList.remove('led-red');#}
+{#                            document.getElementById("t1led").classList.remove('led-green');#}
+{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
+{#                            document.getElementById("t1led").classList.add('led-red');#}
+{##}
+{#                        }else if(randomnumber == 0){#}
+{#                            document.getElementById("t1led").classList.remove('led-red');#}
+{#                            document.getElementById("t1led").classList.remove('led-green');#}
+{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
+{#                            document.getElementById("t1led").classList.add('led-green');#}
+{#                        }else {#}
+{#                            document.getElementById("t1led").classList.remove('led-red');#}
+{#                            document.getElementById("t1led").classList.remove('led-green');#}
+{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
+{#                            document.getElementById("t1led").classList.add('led-yellow');#}
+{#                        }#}
+                        {% if payload == "1" %}
+                            document.getElementById("t1led").classList.remove('led-red');
+                            document.getElementById("t1led").classList.remove('led-green');
+                            document.getElementById("t1led").classList.remove('led-yellow');
+                            document.getElementById("t1led").classList.add('led-red');
+
+                        {% elif payload == "0" %}
+                            document.getElementById("t1led").classList.remove('led-red');
+                            document.getElementById("t1led").classList.remove('led-green');
+                            document.getElementById("t1led").classList.remove('led-yellow');
+                            document.getElementById("t1led").classList.add('led-green');
+                        {% else %}
+                            document.getElementById("t1led").classList.remove('led-red');
+                            document.getElementById("t1led").classList.remove('led-green');
+                            document.getElementById("t1led").classList.remove('led-yellow');
+                            document.getElementById("t1led").classList.add('led-yellow');
+                        {% endif %}
+                    console.log("ajax");
+                    }, 8000);
+                });
+        </script>
 	</head>
 	
 	<body>
     
-    <h1 class="title">UVA Rice Hall Seating Area Availabilities</h1>
-{#    <div class='pin'></div>#}
-{#    <div class='pulse'></div>#}
+        <h1 class="title">UVA SEAS NI-Lab Table Availabilities</h1>
         <div class="NI-lab" style="background-image: url({% static 'pics/map.png' %});">
-            <div class="table" id="t1" style="background-image: url({% static 'pics/table.png' %});">
-                <div class="led-green led-rectangle"></div>
+            <div class="table" id="t1">
+                {% if payload == "1" %}
+                    <div id = "t1led" class="led-red led-rectangle"></div>
+                {% elif payload == "0" %}
+                    <div id = "t1led" class="led-green led-rectangle"></div>
+                {% else %}
+                    <div id = "t1led" class="led-yellow led-rectangle"></div>
+                {% endif %}
             </div>
-            
-            <div class="table" id="t2" style="background-image: url({% static 'pics/table.png' %});"></div>
-            
+            <div class="table" id="t2">
+                    <div class="led-yellow led-rectangle"></div>
+            </div>
         </div>
     	
     	<h1> topic: {{topic}} </h1>
     	<h1> payload: {{payload}} </h1>
-
     
-		<div class="container">
-		  <div class="first-floor floor">
-              <h2>First Floor</h2>
-			  <div class="led-box">
-				<div class="led-green led-round"></div>
-				<p>Zone 1</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 2</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-red led-round"></div>
-				<p>Zone 3</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 4</p>
-			  </div>
-		  </div>
-			<hr>
-		  <div class="second-floor floor">
-              <h2>Second Floor</h2>
-			  <div class="led-box">
-				<div class="led-green led-round"></div>
-				<p>Zone 1</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 2</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-red led-round"></div>
-				<p>Zone 3</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 4</p>
-			  </div>
-		  </div>
-			<hr>
-		  <div class="third-floor floor">
-              <h2>Third Floor</h2>
-			  <div class="led-box">
-				<div class="led-green led-round"></div>
-				<p>Zone 1</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 2</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-red led-round"></div>
-				<p>Zone 3</p>
-			  </div>
-				
-			  <div class="led-box">
-				<div class="led-yellow led-round"></div>
-				<p>Zone 4</p>
-			  </div>
-		  </div> 
-			
+{#		<div class="container">#}
+{#		  <div class="first-floor floor">#}
+{#              <h2>First Floor</h2>#}
+{#			  <div class="led-box">#}
+{#				<div class="led-green led-round"></div>#}
+{#				<p>Zone 1</p>#}
+{#			  </div>#}
+{#				#}
+{#			  <div class="led-box">#}
+{#				<div class="led-yellow led-round"></div>#}
+{#				<p>Zone 2</p>#}
+{#			  </div>#}
+{#				#}
+{#			  <div class="led-box">#}
+{#				<div class="led-red led-round"></div>#}
+{#				<p>Zone 3</p>#}
+{#			  </div>#}
+{#				#}
+{#			  <div class="led-box">#}
+{#				<div class="led-yellow led-round"></div>#}
+{#				<p>Zone 4</p>#}
+{#			  </div>#}
+{#		  </div>#}
+{#	#}
+{#		</div>#}
 
-			
-		</div>
-	
 	</body>
 </html>

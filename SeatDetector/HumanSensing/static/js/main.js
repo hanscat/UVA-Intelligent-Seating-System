@@ -1,11 +1,6 @@
 /**
  * Created by Kefan on 10/20/17.
  */
-$( function() {
-  var $winHeight = $(window).height();
-  $('.container').height($winHeight);
-});
-
 
 $(document).ready(function() {
     $('#example').DataTable( {
@@ -20,3 +15,18 @@ $(document).ready(function() {
         ]
     } );
 } );
+
+window.setTimeout(function () {
+    location.href = "localhost:8000";
+}, 5000);
+
+$.ajax({
+    type: 'POST',
+    url: post_url, 
+    data: post_data,
+    success: function(msg) {
+        $(form).fadeOut(800, function () {
+            form.html(msg).fadeIn().delay(2000);
+    
+    });
+}});

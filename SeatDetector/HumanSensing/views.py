@@ -1,43 +1,30 @@
 from django.shortcuts import render
-from django.template import loader
-# Create your views here.
-from django.http import HttpResponse
 from HumanSensing import subscribe
+import threading
+import time
 
-
-
-def index(request):
-	# return HttpResponse("Hello, world. You're at Dr. Fourier's project index.")
-
+topic = "null"
+payload = "null"
+def conn():
+	global topic, payload
 	topics = ['uvafourier']
-
-
-	topic = "yo"
-	payload = "hmmm"
-
-	"""
-	while(1):
-		m = subscribe.simple(topics, hostname="iot.eclipse.org", retained=False, msg_count=4)
-		for a in m:
-			print("Topic: " + (a.topic))
-			print("Payload: " + str(a.payload))
-	"""
-	# 
-	# m = subscribe.simple(topics, hostname="iot.eclipse.org", retained=False, msg_count=4)
-	# 
-	# for a in m:
-	# 	topic = a.topic
-	# 	payload = a.payload.split(",")[0]
-	# 
-
-	
+	m = subscribe.simple(topics, hostname="iot.eclipse.org", retained=False, msg_count=4)
+	print("iteration")
+	for a in m:
+		topic = a.topic
+		payload = str(a.payload).split(",")[0][2]
+	# payload = "1"
+			
+def index(request):
+	MQTT_thread = threading.Thread(target=conn())
+	MQTT_thread.start()
 	element = {
-		'topic' : topic,
-		'payload' : payload
+		'topic': topic,
+		'payload': payload
 	}
-
-	#return render(request, 'index.html')
 	return render(request, 'index.html', element)
+	# time.sleep(10)
+
 
 def test(request):
 	return render(request, 'index.html')
