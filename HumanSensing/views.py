@@ -7,8 +7,8 @@ topic = "null"
 payload = "null"
 def conn():
 	global topic, payload
-	# topics = ['#']
-	topics = ['uvafourier']
+	topics = '#'
+	# topics = ['uvafourier']
 	m = subscribe.simple(topics, hostname="iot.eclipse.org", retained=False, msg_count=4)
 	print("iteration", str(m[0].payload))
 	for a in m:
@@ -17,12 +17,12 @@ def conn():
 	# payload = "1"
 			
 def index(request):
-	MQTT_thread = threading.Thread(target=conn())
-	MQTT_thread.start()
+	# MQTT_thread = threading.Thread(target=conn())
+	# MQTT_thread.start()
 
 	element = {
 		'topic': topic,
-		'payload': payload
+		'payload': "1"
 	}
 
 	return render(request, 'index.html', element)
