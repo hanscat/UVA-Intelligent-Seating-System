@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c27e6254-847a-4a8c-86a5-fb2b069d312a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeatDetector/settings.py" afterPath="$PROJECT_DIR$/SeatDetector/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeatDetector/wsgi.py" afterPath="$PROJECT_DIR$/SeatDetector/wsgi.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,17 +40,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SeatDetector/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="195">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeatDetector/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -115,8 +114,8 @@
         <option value="$PROJECT_DIR$/SeatDetector/templates/index.html" />
         <option value="$PROJECT_DIR$/SeatDetector/SeatDetector/settings.py" />
         <option value="$PROJECT_DIR$/HumanSensing/views.py" />
-        <option value="$PROJECT_DIR$/SeatDetector/settings.py" />
         <option value="$PROJECT_DIR$/SeatDetector/wsgi.py" />
+        <option value="$PROJECT_DIR$/SeatDetector/settings.py" />
       </list>
     </option>
   </component>
@@ -748,14 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SeatDetector/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SeatDetector/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -763,6 +754,14 @@
           <folding>
             <element signature="e#228#237#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeatDetector/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
