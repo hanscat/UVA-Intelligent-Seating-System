@@ -2,7 +2,7 @@ from django.shortcuts import render
 from HumanSensing import subscribe
 import threading
 import time
-
+import os
 topic = "null"
 payload = "null"
 def conn():
@@ -19,7 +19,7 @@ def conn():
 def index(request):
 	# MQTT_thread = threading.Thread(target=conn())
 	# MQTT_thread.start()
-
+	print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 	element = {
 		'topic': topic,
 		'payload':"1"
