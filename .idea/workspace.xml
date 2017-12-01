@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c27e6254-847a-4a8c-86a5-fb2b069d312a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HumanSensing/static/css/table.css" afterPath="$PROJECT_DIR$/HumanSensing/static/css/table.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/table.css" afterPath="$PROJECT_DIR$/static/css/table.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="table.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/table.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="0" column="790" lean-forward="false" selection-start-line="0" selection-start-column="781" selection-end-line="0" selection-end-column="790" />
+              <caret line="0" column="901" lean-forward="false" selection-start-line="0" selection-start-column="901" selection-end-line="0" selection-end-column="901" />
               <folding />
             </state>
           </provider>
@@ -64,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/HumanSensing/static/css/table.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="0" column="740" lean-forward="true" selection-start-line="0" selection-start-column="740" selection-end-line="0" selection-end-column="963" />
+              <caret line="0" column="740" lean-forward="false" selection-start-line="0" selection-start-column="740" selection-end-line="0" selection-end-column="740" />
               <folding />
             </state>
           </provider>
@@ -82,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -139,6 +140,8 @@
         <option value="$PROJECT_DIR$/SeatDetector/wsgi.py" />
         <option value="$PROJECT_DIR$/SeatDetector/settings.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/HumanSensing/static/css/table.css" />
+        <option value="$PROJECT_DIR$/static/css/table.css" />
       </list>
     </option>
   </component>
@@ -843,22 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HumanSensing/static/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="0" column="740" lean-forward="true" selection-start-line="0" selection-start-column="740" selection-end-line="0" selection-end-column="963" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="0" column="790" lean-forward="false" selection-start-line="0" selection-start-column="781" selection-end-line="0" selection-end-column="790" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SeatDetector/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -869,8 +856,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="75">
+          <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HumanSensing/static/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="0" column="740" lean-forward="false" selection-start-line="0" selection-start-column="740" selection-end-line="0" selection-end-column="740" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="0" column="901" lean-forward="false" selection-start-line="0" selection-start-column="901" selection-end-line="0" selection-end-column="901" />
           <folding />
         </state>
       </provider>
