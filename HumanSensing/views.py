@@ -7,8 +7,8 @@ topic = "null"
 payload = "null"
 def conn():
 	global topic, payload
-	topics = '#'
-	# topics = ['uvafourier']
+	# topics = '#'
+	topics = ['uvafourier']
 	m = subscribe.simple(topics, hostname="iot.eclipse.org", retained=False, msg_count=4)
 	print("iteration", str(m[0].payload))
 	for a in m:
@@ -22,7 +22,7 @@ def index(request):
 
 	element = {
 		'topic': topic,
-		'payload': "1"
+		'payload':"1"
 	}
 
 	return render(request, 'index.html', element)
