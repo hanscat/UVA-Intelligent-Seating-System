@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c27e6254-847a-4a8c-86a5-fb2b069d312a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HumanSensing/static/images/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeatDetector/static/images/sort_asc_disabled.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SeatDetector/static/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/SeatDetector/staticfiles/images/sort_asc_disabled.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -175,7 +175,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="staticfiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,10 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,11 +252,11 @@
       <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SeatDetector/staticfiles" />
       <recent name="$PROJECT_DIR$/HumanSensing/static/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing/static" />
       <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing" />
-      <recent name="$PROJECT_DIR$/SeatDetector" />
     </key>
   </component>
   <component name="RunManager">
