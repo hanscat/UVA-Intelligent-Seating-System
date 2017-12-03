@@ -22,7 +22,7 @@ def index(request):
 	print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 	element = {
 		'topic': topic,
-		'payload':"1"
+		'payload': "1"
 	}
 
 	return render(request, 'index.html', element)
