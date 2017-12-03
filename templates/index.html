@@ -3,7 +3,6 @@
 	<head>
 		{% load static %}   
 		<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-{#        <link rel="stylesheet" href="{% static 'css/table.css' %}"/>#}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Capstone project of CpE 2018">
@@ -21,24 +20,6 @@
         $(document).ready(
                 function() {
                     setInterval(function() {
-{#                        var randomnumber = Math.floor(Math.random() * 100 % 3);#}
-{#                        if(randomnumber == 1){#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-red');#}
-{##}
-{#                        }else if(randomnumber == 0){#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-green');#}
-{#                        }else {#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-yellow');#}
-{#                        }#}
                         {% if payload == "1" %}
                             document.getElementById("t1led").classList.remove('led-red');
                             document.getElementById("t1led").classList.remove('led-green');
@@ -63,7 +44,6 @@
 	</head>
 	
 	<body>
-    
         <h1 class="title">UVA SEAS NI-Lab Table Availabilities</h1>
         <div class="NI-lab" style="background-image: url({% static 'pics/map.png' %});">
             <div class="table" id="t1">
@@ -82,32 +62,5 @@
     	
     	<h1> topic: {{topic}} </h1>
     	<h1> payload: {{payload}} </h1>
-    
-{#		<div class="container">#}
-{#		  <div class="first-floor floor">#}
-{#              <h2>First Floor</h2>#}
-{#			  <div class="led-box">#}
-{#				<div class="led-green led-round"></div>#}
-{#				<p>Zone 1</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-yellow led-round"></div>#}
-{#				<p>Zone 2</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-red led-round"></div>#}
-{#				<p>Zone 3</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-yellow led-round"></div>#}
-{#				<p>Zone 4</p>#}
-{#			  </div>#}
-{#		  </div>#}
-{#	#}
-{#		</div>#}
-
 	</body>
 </html>
