@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c27e6254-847a-4a8c-86a5-fb2b069d312a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SeatDetector/static/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/SeatDetector/staticfiles/images/sort_asc_disabled.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SeatDetector/staticfiles/images/sort_asc_disabled.fe6bd7072b74.png" afterPath="$PROJECT_DIR$/SeatDetector/static/images/sort_asc_disabled.fe6bd7072b74.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SeatDetector/staticfiles/images/sort_asc_disabled.png" afterPath="$PROJECT_DIR$/SeatDetector/static/images/sort_asc_disabled.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -252,11 +252,11 @@
       <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SeatDetector/static" />
       <recent name="$PROJECT_DIR$/SeatDetector/staticfiles" />
       <recent name="$PROJECT_DIR$/HumanSensing/static/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing/static" />
-      <recent name="$PROJECT_DIR$/SeatDetector/HumanSensing" />
     </key>
   </component>
   <component name="RunManager">
