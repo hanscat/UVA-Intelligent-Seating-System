@@ -17,12 +17,12 @@ def conn():
 	# payload = "1"
 			
 def index(request):
-	# MQTT_thread = threading.Thread(target=conn())
-	# MQTT_thread.start()
+	MQTT_thread = threading.Thread(target=conn())
+	MQTT_thread.start()
 	print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 	element = {
 		'topic': topic,
-		'payload':"1"
+		'payload': payload
 	}
 
 	return render(request, 'index.html', element)
