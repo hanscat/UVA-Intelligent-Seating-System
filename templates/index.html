@@ -3,7 +3,9 @@
 	<head>
 		{% load static %}   
 		<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-{#        <link rel="stylesheet" href="{% static 'css/table.css' %}"/>#}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"/>        
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/footer.css' %}"/>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Capstone project of CpE 2018">
@@ -21,30 +23,11 @@
         $(document).ready(
                 function() {
                     setInterval(function() {
-{#                        var randomnumber = Math.floor(Math.random() * 100 % 3);#}
-{#                        if(randomnumber == 1){#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-red');#}
-{##}
-{#                        }else if(randomnumber == 0){#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-green');#}
-{#                        }else {#}
-{#                            document.getElementById("t1led").classList.remove('led-red');#}
-{#                            document.getElementById("t1led").classList.remove('led-green');#}
-{#                            document.getElementById("t1led").classList.remove('led-yellow');#}
-{#                            document.getElementById("t1led").classList.add('led-yellow');#}
-{#                        }#}
                         {% if payload == "1" %}
                             document.getElementById("t1led").classList.remove('led-red');
                             document.getElementById("t1led").classList.remove('led-green');
                             document.getElementById("t1led").classList.remove('led-yellow');
                             document.getElementById("t1led").classList.add('led-red');
-
                         {% elif payload == "0" %}
                             document.getElementById("t1led").classList.remove('led-red');
                             document.getElementById("t1led").classList.remove('led-green');
@@ -56,17 +39,27 @@
                             document.getElementById("t1led").classList.remove('led-yellow');
                             document.getElementById("t1led").classList.add('led-yellow');
                         {% endif %}
-                    console.log("ajax");
-                    }, 8000);
+                    }, 2000);
                 });
         </script>
 	</head>
 	
 	<body>
     
-        <h1 class="title">UVA SEAS NI-Lab Table Availabilities</h1>
+        <div class="topnav" id="myTopnav">
+          <a class="active" href="#">Home</a>
+          <a href="https://engineering.virginia.edu/future-undergrads/academics/computer-engineering-program">CpE</a>
+          <a href="mailto:kz6ef@virginia.edu">Contact</a>
+          <a href="https://github.com/hanscat/UVA-Intelligent-Seating-System">Code</a>
+        </div>
+        
+        <div class="jumbotron">
+          <h1>UVA SEAS NI-Lab Table Availabilities</h1> 
+          <p>This tool helps you find the beat available table in the first place.</p> 
+        </div>
+        
         <div class="NI-lab" style="background-image: url({% static 'pics/map.png' %});">
-            <div class="table" id="t1">
+            <div class="NItable" id="t1">
                 {% if payload == "1" %}
                     <div id = "t1led" class="led-red led-rectangle"></div>
                 {% elif payload == "0" %}
@@ -75,39 +68,112 @@
                     <div id = "t1led" class="led-yellow led-rectangle"></div>
                 {% endif %}
             </div>
-            <div class="table" id="t2">
-                    <div class="led-yellow led-rectangle"></div>
+            <div class="NItable" id="t2">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t3">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t4">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t5">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t6">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t7">
+                <div class="led-yellow led-rectangle led-veritical"></div>
+            </div>
+            <div class="NItable" id="t8">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t9">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t10">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t11">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t12">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t13">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t14">
+                <div class="led-yellow led-rectangle"></div>
+            </div>
+            <div class="NItable" id="t15">
+                <div class="led-yellow led-rectangle"></div>
             </div>
         </div>
     	
-    	<h1> topic: {{topic}} </h1>
-    	<h1> payload: {{payload}} </h1>
-    
-{#		<div class="container">#}
-{#		  <div class="first-floor floor">#}
-{#              <h2>First Floor</h2>#}
-{#			  <div class="led-box">#}
-{#				<div class="led-green led-round"></div>#}
-{#				<p>Zone 1</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-yellow led-round"></div>#}
-{#				<p>Zone 2</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-red led-round"></div>#}
-{#				<p>Zone 3</p>#}
-{#			  </div>#}
-{#				#}
-{#			  <div class="led-box">#}
-{#				<div class="led-yellow led-round"></div>#}
-{#				<p>Zone 4</p>#}
-{#			  </div>#}
-{#		  </div>#}
-{#	#}
-{#		</div>#}
+{#    	<h1> topic: {{topic}} </h1>#}
+{#    	<h1> payload: {{payload}} </h1>#}
+        <div class="container">
+            <div class="row">            
+                <div class="NItable col-xs-3" id="demo-yellow">
+                    <div class="led-red led-rectangle"></div>
+                </div>
+                    <p class="instr col-xs-9">: The table is currently occupied</p>
+            </div>
+            <div class="row">
+                <div class="NItable col-xs-3" id="demo-yellow">
+                    <div class="led-green led-rectangle"></div>
+                </div>
+                    <p class="instr col-xs-9">: The table is currently available</p>
+            </div>
+            <div class="row">
+                <div class="NItable col-xs-3" id="demo-yellow">
+                    <div class="led-yellow led-rectangle"></div>
+                </div>
+                    <p class="instr col-xs-9">: Currently not sure about the place</p>
+            </div>
+        </div>
 
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <h3> Inofrmation </h3>
+                    <ul>
+                        <li> <a href="#"> Under developement </a> </li>
+                        <li> <a href="#"> Under developement </a> </li>
+                        <li> <a href="#"> Under developement </a> </li>
+                        <li> <a href="#"> Under developement </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6  col-md-6 col-sm-6 col-xs-12 ">
+                    <h3> Subscribe </h3>
+                    <ul>
+                        <li>
+                            <div class="input-append newsletter-box text-center">
+                                <input type="text" class="full text-center" placeholder="Email ">
+                                <button class="btn  bg-gray" type="button"> Send Email Link <i class="fa fa-long-arrow-right"> </i> </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social">
+                        <li> <a href="https://www.facebook.com"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="https://www.twitter.com"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="https://www.google.com"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="https://www.pinterest.com"> <i class="fa fa-pinterest">   </i> </a> </li>
+                        <li> <a href="https://www.youtube.com"> <i class="fa fa-youtube">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+    </div>
+
+</footer>
 	</body>
 </html>

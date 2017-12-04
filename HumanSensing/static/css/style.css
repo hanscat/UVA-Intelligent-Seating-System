@@ -15,7 +15,6 @@
 	margin-bottom: 0;
 }
 
-
 @-webkit-keyframes blinkRed {
 	from { background-color: #F00; }
 	50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
@@ -104,6 +103,10 @@
   animation: blinkYellow 1s infinite;
 }
 
+.led-veritical {
+	height: 10.5vw;
+	width: 5.5vw;
+}
 
 .first-floor:before, .second-floor:before{
 	border: 3px solid red;
@@ -122,20 +125,17 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	border: 5px solid red;
 	height: 64vw;
 	width: 100vw;
 
 }
 
-.table{ 
+.NItable{ 
 	height: 5vw;
 	width: 10vw;
-	/*border: 3px solid blue;*/
 	position: absolute;
 }
 #t1 {
-	/*border: 2px solid yellow;*/
 	left: 28.1vw;
 	top: 26.2vw;
 
@@ -146,8 +146,67 @@
 	top: 12.9vw;
 }
 
+#t3 {
+	left: 27.6vw;
+	top: 12.8vw;
+}
+#t4 {
+	left: 43.5vw;
+	top: 12.7vw;
+}
+#t5 {
+	left: 58.9vw;
+	top: 12.8vw;
+}
+#t6 {
+	left: 12.9vw;
+	top: 26.3vw;
+}
+#t7 {
+	left: 75.7vw;
+	top: 10.1vw;
+}
+#t8 {
+	left: 43.9vw;
+	top: 26.2vw;
+}
+#t9 {
+	left: 75.5vw;
+	top: 26.3vw;
+}
+#t10 {
+	left: 59.6vw;
+	top: 26.3vw;
+}
+#t11 {
+	left: 75.5vw;
+	top: 40.7vw;
+}
+#t12 {
+	left: 44vw;
+	top: 40.5vw;
+}
+#t13 {
+	left: 59.4vw;
+	top: 40.6vw;
+}
+#t14 {
+	left: 28.2vw;
+	top: 40.6vw;
+}
+#t15 {
+	left: 13vw;
+	top: 40.7vw;
+}
+
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 
+}
+
+.instr {
+	margin-top: 0;
+	margin-left: 12vw;
 }

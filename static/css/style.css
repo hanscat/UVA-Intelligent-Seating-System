@@ -122,7 +122,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	border: 5px solid red;
 	height: 64vw;
 	width: 100vw;
 
@@ -131,11 +130,9 @@
 .table{ 
 	height: 5vw;
 	width: 10vw;
-	/*border: 3px solid blue;*/
 	position: absolute;
 }
 #t1 {
-	/*border: 2px solid yellow;*/
 	left: 28.1vw;
 	top: 26.2vw;
 
@@ -144,6 +141,19 @@
 #t2 {
 	left: 12.4vw;
 	top: 12.9vw;
+}
+
+#t3 {
+	left: 27.6vw;
+	top: 12.8vw;
+}
+#t4 {
+	left: 27.6vw;
+	top: 12.8vw;
+}
+#t5 {
+	left: 27.6vw;
+	top: 12.8vw;
 }
 
 body {
