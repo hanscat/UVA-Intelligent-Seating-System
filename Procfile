@@ -1,0 +1,1 @@
+web: gunicorn SeatDetector.wsgi --log-file -
